@@ -1,0 +1,13 @@
+<!-- GCP integration with Wazuh -->
+
+nano /var/ossec/etc/ossec.conf
+
+<gcp-pubsub>
+    <pull_on_start>yes</pull_on_start>
+    <interval>1m</interval>
+    <project_id>devsecopstesting-340211</project_id>
+    <subscription_name>wazuh-companyname-gcp-topic-sub</subscription_name>
+    <logging>info</logging>
+    <max_messages>1000</max_messages>
+    <credentials_file>wodles/gcp-pubsub/wazuh-gcp-key.json</credentials_file>
+  </gcp-pubsub>
