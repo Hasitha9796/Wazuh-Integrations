@@ -1,0 +1,22 @@
+<!-- office 365 integration -->
+
+nano /var/ossec/etc/ossec.conf
+
+<office365>
+    <enabled>yes</enabled>
+    <interval>1m</interval>
+    <curl_max_size>1M</curl_max_size>
+    <only_future_events>yes</only_future_events>
+    <api_auth>
+        <tenant_id>sadjlsjdaldjlajdlajdladjl</tenant_id>
+        <client_id>dasdasjdjsd991ed</client_id>
+        <client_secret>sdjsl;djaldjal;dal;d;sdjaio</client_secret>
+    </api_auth>
+    <subscriptions>
+        <subscription>Audit.SharePoint</subscription>
+        <subscription>Audit.Exchange</subscription>
+        <subscription>Audit.AzureActiveDirectory</subscription>
+        <subscription>Audit.General</subscription>
+        <subscription>DLP.All</subscription>
+    </subscriptions>
+  </office365>
