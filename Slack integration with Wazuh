@@ -1,0 +1,27 @@
+<!-- Slack Integration -->
+
+nano /var/ossec/etc/ossec.conf
+
+<integration>
+    <name>slack</name>
+    <!-- potential-high-incident  -->
+    <level>6</level>
+    <hook_url>https://hooks.slack.com/services/TsdasdsaGC/B03SJDBMPEY/KcxJsadasdasddasddafHi</hook_url>
+    <alert_format>json</alert_format>
+  </integration>
+  
+  <integration>
+    <name>slack</name>
+    <!-- potential-high-incident  -->
+    <level>10</level>
+    <hook_url>https://hooks.slack.com/services/T01C75ZCTGC/B0sadas/BQyHBQassdasdas</hook_url>
+    <alert_format>json</alert_format>
+  </integration>
+
+  <integration>
+    <name>slack</name>
+    <!-- Ossec Status  -->
+    <rule_id>501,502,503,504,505,506</rule_id>
+    <hook_url>https://hooks.slack.com/services/T0asdasdadC/B03M6Easdsad/RAzfYQ5CtsoSzDisadsadadasdasdj1</hook_url>
+    <alert_format>json</alert_format>
+  </integration>
