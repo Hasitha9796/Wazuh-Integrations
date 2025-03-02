@@ -37,7 +37,7 @@ def send_to_teams(webhook_url, alert):
             "summary": "Wazuh Alert",
             "sections": [
                 {
-                    "activityTitle": "BorderlessCS SOC Alert Notification",
+                    "activityTitle": "Wazuh Alert Notification",
                     "facts": [
                         {"name": "Timestamp", "value": timestamp},
                         {"name": "Agent", "value": f"{agent_name} (ID: {agent_id})"},
